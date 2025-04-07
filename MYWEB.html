@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>متجر الجمال</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background-color: #1a1a1a;
+      color: #f3f3f3;
+    }
+
+    header {
+      background-color: #111;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      color: #eab308;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .product-card {
+      background-color: #2a2a2a;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .product-card h3 {
+      margin-top: 15px;
+      font-size: 20px;
+    }
+
+    .product-card p {
+      color: #ccc;
+      font-size: 16px;
+    }
+
+    .product-card button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #eab308;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      color: #000;
+    }
+
+    .product-card button:hover {
+      background-color: #facc15;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>متجر الجمال</h1>
+    <nav>
+      <a href="#">الرئيسية</a>
+      <a href="#">المنتجات</a>
+      <a href="#">تواصل معنا</a>
+    </nav>
+  </header>
+
+  <section class="products">
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300x200" alt="منتج 1">
+      <h3>أحمر شفاه فاخر</h3>
+      <p>سعر: 75 ريال</p>
+      <button>أضف للسلة</button>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300x200" alt="منتج 2">
+      <h3>كريم أساس حريري</h3>
+      <p>سعر: 120 ريال</p>
+      <button>أضف للسلة</button>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/300x200" alt="منتج 3">
+      <h3>مجموعة ظلال عيون</h3>
+      <p>سعر: 95 ريال</p>
+      <button>أضف للسلة</button>
+    </div>
+  </section>
+
+</body>
+</html>
