@@ -1,0 +1,19 @@
+<script>
+    let cart = [];
+
+    function addToCart(productName, productPrice) {
+        cart.push({ name: productName, price: productPrice });
+        alert(${productName} تم إضافته إلى السلة);
+    }
+
+    function displayCart() {
+        let cartDetails = '';
+        let total = 0;
+        cart.forEach(item => {
+            cartDetails += ${item.name} - ${item.price} ريال<br>;
+            total += item.price;
+        });
+        cartDetails += إجمالي: ${total} ريال;
+        document.getElementById('cart-details').innerHTML = cartDetails;
+    }
+</script>
