@@ -1,0 +1,7 @@
+<button onclick="addToCart('منتج 1', 100)">إضافة إلى السلة</button>
+
+<!-- زر إضافة إلى السلة -->
+<button class="add-to-cart-btn">إضافة إلى السلة</button>
+
+<!-- زر عرض السلة -->
+<button class="view-cart-btn">عرض السلة</button>
